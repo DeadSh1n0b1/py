@@ -1,0 +1,8 @@
+import datetime
+ 
+print('Введите дату своего рождения.')
+day = int(input('День: '))
+month = int(input('Месяц: '))
+year = int(input('Год: '))
+TODAY = datetime.date.today()
+print(f'Ваш возраст {TODAY.year - year - ((TODAY.month, TODAY.day) < (month, day))}')
